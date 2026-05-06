@@ -1,0 +1,10 @@
+Flask is a lightweight Python web framework used to build web applications.
+Django is a full-featured Python web framework with built-in admin panel.
+RAG stands for Retrieval Augmented Generation and improves LLM accuracy using external data.
+OpenAI provides APIs for advanced language models like GPT-4o-mini.
+Python is a popular programming language used in AI, data science, and backend development.
+Machine Learning is a subset of AI that allows systems to learn from data.
+REST API is a way for systems to communicate over HTTP using standard methods like GET and POST.
+Vector databases store embeddings for semantic search in RAG systems.
+FAISS is a library used for efficient similarity search in machine learning.
+Chatbots can be rule-based, LLM-based, or retrieval-based depending on architecture.

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rule-Based Chatbot</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            text-align: center;
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #3b82f6;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #2563eb;
+        }
+
+        .response {
+            margin-top: 20px;
+            padding: 12px;
+            background: #0f172a;
+            border-radius: 8px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 15px;
+            color: #60a5fa;
+            text-decoration: none;
+        }
+
+        .back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1> Rule-Based Chatbot</h1>
+
+    <form method="POST" action="/rule-based">
+        <input type="text" name="user_input"
+               placeholder="Try: add milk / show / delete milk">
+        <button type="submit">Send</button>
+    </form>
+
+    {% if response %}
+    <div class="response">
+        <b>Response:</b> {{ response }}
+    </div>
+    {% endif %}
+
+    <a class="back" href="/">← Back to Home</a>
+
+</div>
+
+</body>
+</html>
